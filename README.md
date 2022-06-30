@@ -15,3 +15,8 @@ To run the HTML website, you need the following?
 2. A ButterCMS WRITE API key
 
 Read the [How to Add a CMS to a HTML Website](https://buttercms.com/blog/how-to-add-a-cms-to-a-html-website/) article to learn how to setup your ButterCMS collection.
+
+## One last thing 🤫
+Please star ( ⭐️ ) this repository if you find this application useful. The stars ( 🌟 ) provide encouragement.
+
+Happy Hacking ✌️
