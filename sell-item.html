@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post An Antique</title>
+
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/datepicker.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="p-4 mb-2 shadow-lg">
+        <h2 class="text-md"><a href="/"> ButterCMS Antique Community Store | Post An Antique </a></h2>
+    </nav>
+
+    <div class=" h-screen" style="background-color: #fff5e8;">
+        <div class="flex items-center justify-center">
+
+            <div class="mt-2 p-5 bg-white shadow-md rounded-lg">
+                <div class="mb-8">
+                    <h2 class="text-center text-xl font-semibold mb-2">Post Your Antique For Sale </h2>
+                    <hr />
+                </div>
+
+                <form class=" w-full max-w-lg">
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="antique-name">
+                                Antique Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="antique-name" placeholder="What antique are you posting? E.g Crown of fire">
+                            <p class="text-gray-600 text-xs italic">Provide item name only</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="mb-3">
+                            <p class="font-semibold uppercase text-xs"> Your details </p>
+                        </div>
+                        <div class="flex items-between -mx-3 mb-2">
+                            <div class="w-full px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="poster-name">
+                                    Fullname
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="poster-name" placeholder="E.g John Doe">
+                            </div>
+
+                            <div class="w-full px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="poster-location">
+                                    Antique Location
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="poster-location" placeholder="E.g Madrid, Spain" />
+                            </div>
+
+                            <div class="w-full px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="contact_phone_number">
+                                    Phone Number
+                                </label>
+                                <input
+                                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    id="contact_phone_number" placeholder="E.g +234909999999999" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="mb-3">
+                            <p class="font-semibold uppercase text-xs"> Antique Timestamps </p>
+                        </div>
+                        <div class="flex items-between -mx-3 mb-2">
+                            <div class="w-full px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="country">
+                                    Speculated Time Of Creation
+                                </label>
+
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <input id="original_creation_date" datepicker type="text"
+                                        class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+                                        placeholder="Select date">
+                                </div>
+                            </div>
+
+                            <div class="w-full  px-3 mb-6 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                    for="state">
+                                    Time Item Was Discovered
+                                </label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd"
+                                                d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <input id="discovery_date" datepicker type="text"
+                                        class="border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+                                        placeholder="Select date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap -mx-3 mb-4">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="antique-description">
+                                antique Description
+                            </label>
+
+                            <textarea id="antique-description"
+                                placeholder="E.g The silver crown was forged in the 1450 A.D in Spain by the three Spaniards"
+                                class="resize-x font-sm rounded-md appearance-none block h-28 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"></textarea>
+
+                            <p class="text-gray-600 text-xs italic">Describe the uniqueness of your antique item!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="sell-price">
+                                Sell Price
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                id="sell-price" placeholder="$200,000.00">
+                        </div>
+                    </div>
+
+                    <button id="saveAntiqueBtn"
+                        class="w-full mb-2 mt-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Post Antique Item
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="post_script.js"></script>
+
+</html>

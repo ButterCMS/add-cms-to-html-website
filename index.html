@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButterCMS Antique</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class='w-full flex justify-center items-center p-8' style="height: 450px; background-image: url(https://res.cloudinary.com/dkfptto8m/image/upload/v1654944572/antique-cover.jpg)">
+        <div class="bg-white p-12 rounded-xl shadow-md " >
+            <h1 class="text-4xl bg mb-2 text-center"> ButterCMS Antique Community Store</h1>
+            <hr />
+            <p class="text-xl text-center mt-4"> Take a peep and find the value of history <br /> from antiques sold by collectors around the world.</p>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-center min-h-82" style="background-color: #fff5e8;" >
+        <div>
+            <div class="w-full rounded-lg shadow-lg flex justify-between p-5 bg-white h-20" style="transform: translateY(-50px);">
+                <div>
+                    <p class="pt-2" id="antiques-count"> </p>
+                </div>
+
+                <div>
+                    <button class="mb-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        <a href="/sell-item.html">
+                            Sell Your Antique Item
+                        </a>
+                    </button>
+                </div>
+            </div>
+            
+            <hr />
+
+            <ul class="grid grid-cols-3 gap-10 mt-5 pb-12" id="posted-antiques">
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="home_script.js"></script>
+
+</html>
